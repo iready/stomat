@@ -1,0 +1,55 @@
+.consult__text {
+  font-size: 48px;
+}
+
+.article-head {
+  font-size: 48px;
+}
+
+.header__top-menu__phone-link {
+  display: none;
+}
+
+.footer__social__link {
+    width: 42px;
+    height: 42px;
+    background: #647687;
+    margin-right: 8px;
+    margin-top: 5px;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.footer__working {
+  text-align: right;
+  }
+
+@media only screen and (max-width: 576px) {
+  .consult__text {
+    font-size: 28px;
+  }
+  .article-head {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .header__top-menu__phone-link {
+    display: inline-block;
+  }
+  .footer__logo {
+    text-align: center;
+  }
+  .footer__social {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer__social__link {
+    width: 38px;
+    height: 38px;
+    font-size: 21px;
+    padding: 8px;
+  }
+  .footer__working {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
