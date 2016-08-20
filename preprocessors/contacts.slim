@@ -1,21 +1,15 @@
 == Slim::Template.new("_header.slim").render
-section.consult
-	.container
-		.row.middle-xs.center-xs
-			.col-xs-11
-				h1.consult__text Установи виниры прямо сейчас
-		.row.middle-xs.center-xs
-			.col-xs-9.col-md-4
-				a.button.consult__button.wow.pulse data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="3" href="#" Консультация
-		.row.middle-xs.center-xs
 section.contacts
 	.container
 		.row.middle-xs.center-xs
 			.col-xs-9.col-md-8
 				h2.article-head.wow.fadeInDown Контакты
+
+	#main_map
+	.container
 		.row.middle-xs.center-xs
 			.col-xs-9.col-md-10
-				section.product_cart__tab_content__item.active itemscope="" itemtype="http://schema.org/Organization" 
+				section.product_cart__tab_content__item.active itemscope="" itemtype="http://schema.org/Organization"
 					li.product_cart__tab_content__item__characteristics__item
 					  strong Данные о стоматологии
 					li.product_cart__tab_content__item__characteristics__item
@@ -30,6 +24,6 @@ section.contacts
 					li.product_cart__tab_content__item__characteristics__item
 					  | Юридический адрес:
 					  span г.Екатеринбург пер.Встречный д.7/3
-			    
+
 == Slim::Template.new("_feedback.slim").render
-== Slim::Template.new("_footer.slim").render
+== Slim::Template.new("_footer_without_map.slim").render

@@ -1251,18 +1251,19 @@ ymap[class$="places-pane"] {
   z-index: 3000; }
 
 .product_cart__tab_content__item {
-    border: 2px solid #00c691;
-    padding: 35px;
-        border-radius: 30px 0px 30px 0px;
-            text-align: left;
-    }
+  border: 2px solid #00c691;
+  padding: 35px;
+  border-radius: 30px 0px 30px 0px;
+  text-align: left;
+  margin-top: 40px;
+}
 
-    .product_cart__tab_content__item__characteristics__item.product_cart__tab_content__item__characteristics__item {
-    margin: 10px 0;
-    padding: 5px;
-    display: table;
-    width: 100%;
-    border-bottom: 1px solid #676767;
+.product_cart__tab_content__item__characteristics__item.product_cart__tab_content__item__characteristics__item {
+  margin: 10px 0;
+  padding: 5px;
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #676767;
 }
 .product_cart__tab_content__item__characteristics__item span {
     display: table-cell;
@@ -1436,15 +1437,9 @@ ul.blue-bullets, .content-text ul {
   line-height: 25px;
   line-height: 2.5rem;
 }
-ul.blue-bullets:first-child, .content-text ul:first-child {
-  margin-top: 0;
-}
-ul.blue-bullets li, .content-text ul li {
-  margin-top: 15px;
+ul.blue-bullets {
+  margin: 20px 0;
   font-size: 16px;
-}
-ul.blue-bullets li:first-child, .content-text ul li:first-child {
-  margin-top: 0;
 }
 ul.blue-bullets li:before, .content-text ul li:before {
   content: '';
@@ -1495,6 +1490,8 @@ ul.blue-bullets li:before, .content-text ul li:before {
 .price ul li {
   padding-left: 50px;
   margin-top: 10px;
+  position: relative;
+  font-size: 16px;
 }
 .price ul li:first-child {
   margin-top: 0;
@@ -1504,12 +1501,12 @@ ul.blue-bullets li:before, .content-text ul li:before {
   display: block;
   width: 6px;
   height: 6px;
-background: #00c691;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  float: left;
-  margin: 7px -100% 0 -20px;
+  background: #00c691;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  top: 48%;
+  top: calc(50% - 3px);
 }
 .price__body {
   margin-bottom: 30px;
