@@ -16,7 +16,7 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#scrollspy">
     <header class="header">
       <div class="container">
         <div class="row middle-xs center-xs">
@@ -118,7 +118,9 @@
             </li>
           </ul>
         </div>
-        <div class="menu__bottom-block"></div>
+        <div class="menu__bottom-block" id="reviews">
+          <a class="flamp-widget" href="http://ekaterinburg.flamp.ru/firm/prioritet_ooo_stomatologicheskaya_klinika-1267166676634699"  data-flamp-widget-type="big" data-flamp-widget-count="3" data-flamp-widget-orientation="portrait" data-flamp-widget-id="1267166676634699">Отзывы о нас на Флампе</a><script>!function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script");</script><style>iframe {max-width: 100%!important;}</style>
+        </div>
       </div>
       <div class="col-xs-9">
         <p class="seo-text">
@@ -330,9 +332,9 @@
   <article class="feedback__head">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12 col-md-12">
-        <h2 class="article-head wow fadeInDown" data-wow-delay="0.5s">
+        <div class="article-head wow fadeInDown ask-me" data-wow-delay="0.5s">
           Есть вопросы? Напишите нам
-        </h2>
+        </div>
       </div>
     </div>
   </article>
@@ -421,4 +423,5 @@
 <script async="true" defer="true" src="js/vendor/jquery.magnific-popup.js"></script>
 <script async="true" defer="true" src="js/vendor/wow.min.js"></script>
 <script async="true" defer="true" src="js/vendor/jquery.periodpicker.full.min.js"></script>
+<script async="true" defer="true" src="js/vendor/bootstrap.min.js"></script>
 <script async="true" defer="true" src="js/main.js"></script>
