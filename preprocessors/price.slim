@@ -11,21 +11,29 @@
   .row.middle-xs.center-xs
     .col-xs-12.col-md-12
       h1.article-head.wow.fadeInDown Цены на услуги
+
 .container
+    .row.middle-xs
+      .col-xs-12
+        ul.breadcrumb
+          li.breadcrumb__item
+            a.breadcrumb__item__link href="#" Главная
+          li.breadcrumb__item Цены на услуги
+
     .row.middle-xs
       .col-xs-12
           .price-item
             .price-item__title
               .row.middle-xs
-                .col-xs-6
+                .col-xs-12.col-sm-6.col-md-6
                   h3 Консультация и диагностика
-                .col-xs-6.end-xs
+                .col-xs-12.col-sm-6.col-md-6.end-xs
                   .price__cost
                           | от 2 000
                           span.rub ₽
                 .price
                   p Первичный осмотр и консультация
-                  ul.blue-bullets
+                  ul.dott
                     li Осмотр полости рта с подробной консультацией и постановкой диагноза
                     li Рентгенологические панорамный и прицельные снимки
                     li Консультация узких специалистов (терапевта, ортопеда, хирурга, пародонтолога)
@@ -61,11 +69,13 @@
                       .dots__value
                         | 8 000
                         span.rub ₽
-                ul.features
-                  li
-                    a href="/patsientam/lechenie-po-dms/"  Лечим зубы по ДМС
-                  li
-                    a href="/patsientam/lechenie-v-kredit/"  Оказываем услуги в кредит
+                .features
+                  .row.middle-xs.end-md
+                    .col-xs-6.col-md-3
+                      a href="/patsientam/lechenie-po-dms/"  Лечим зубы по ДМС
+                    .col-xs-6.col-md-3
+                      a href="/patsientam/lechenie-v-kredit/"  Оказываем услуги в кредит
+
 
 
 == Slim::Template.new("_feedback.slim").render

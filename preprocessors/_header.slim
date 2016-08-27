@@ -22,16 +22,53 @@ html.no-js
     link href="css/main.css" rel="stylesheet" /
     link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css" /
 
-  body data-spy="scroll" data-target="#scrollspy"
+  body
+    
+    #panel
+      a.toggle-menu
+        span.icon-menu
     header.header
       .container
         .row.middle-xs.center-xs
-          .col-xs-12.col-md-2
+          .col-xs-12.col-sm-6.col-md-2
             figure.header__logo
               a href="#"
                 img.header__logo__image src="img/logo.png" /
-          .col-xs-12.col-md-8
+          .col-xs-12.col-sm-6.col-md-3.last-md
+            .row.middle-xs
+              .col-xs-12
+                a.callme.open-popup-link href="#inline-popups"  Записаться на прием
+              .col-xs-12
+                address.header__top-menu__address
+                  span.icon-phone.footer__working__phone__ico.header__top-menu__address__ico
+                  span.header__top-menu__address__span 
+                    | (343)
+                  span 311-22-33
+              #inline-popups.white-popup.mfp-hide
+                | Записаться на прием
+          .col-xs-12.col-md-7
             .row.middle-xs.center-xs
+              #menu
+                #a href="https://github.com/mango/slideout" target="_blank" 
+                  header.menu-header
+                    span.menu-header-title Меню
+                section.menu-section
+                  ul.header__top-menu
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link.active href="index.html"  Главная
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link href="#"  О компании
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link href="service.html"  Услуги
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link href="blog.html"  Статьи
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link href="price.html"  Цены
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link href="#"  Отзывы
+                    li.header__top-menu__item
+                      a.header__top-menu__item__link href="contacts.html"  Контакты
+
               ul.header__top-menu
                 li.header__top-menu__item
                   a.header__top-menu__item__link.active href="index.html"  Главная
@@ -47,13 +84,3 @@ html.no-js
                   a.header__top-menu__item__link href="#"  Отзывы
                 li.header__top-menu__item
                   a.header__top-menu__item__link href="contacts.html"  Контакты
-          .col-xs-12.col-md-2
-            .row.middle-xs.center-xs
-              address.header__top-menu__address
-                span.icon-phone.footer__working__phone__ico.header__top-menu__address__ico
-                span.header__top-menu__address__span
-                  | (343)
-                | 311-22-33
-              a.callme.open-popup-link href="#inline-popups"  записаться на прием
-              #inline-popups.white-popup.mfp-hide
-                | Записаться на прием

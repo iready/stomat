@@ -11,18 +11,18 @@
 }
 
 .footer__social__link {
-    width: 42px;
-    height: 42px;
-    background: #647687;
-    margin-right: 8px;
-    margin-top: 5px;
-    font-size: 21px;
-    padding: 10px;
+  width: 42px;
+  height: 42px;
+  background: #647687;
+  margin-right: 8px;
+  margin-top: 5px;
+  font-size: 21px;
+  padding: 10px;
 }
 
 .footer__working {
   text-align: right;
-  }
+}
 
 @media only screen and (max-width: 576px) {
   .consult__text {
@@ -53,7 +53,8 @@
     margin-top: 40px;
   }
 }
-@media screen and (min-width:990px) and (max-width:1200px) {
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
   .header__top-menu__address {
     font-size: 17px;
   }

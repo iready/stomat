@@ -12,17 +12,16 @@ $(document).ready(function() {
 
   if ($(COUNTBOX).length > 0) initCountBox();
 
-  if ($('.affix_handler').length > 0) {
-    $('.affix_handler').addClass('affix')
-    $('.affix').affix({
-      offset: {
-        top: 500,
-        bottom: $('body').height() - $('.ask-me').offset().top
-    }}).css("max-width",($('.container').width() / 4) - 32);
-  }
-  $( window ).resize(function() {
-    $('.affix').css("max-width", $('.container').width() / 4);
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
   });
+
+document.querySelector('.toggle-menu').addEventListener('click', function() {
+  slideout.toggle();
+});
 
   today = (new Date()).setDate((new Date()).getDate());
 
