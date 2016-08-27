@@ -21,9 +21,10 @@ body {
   height: 100%;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
 }
-
+.period_picker_box {
+  max-width: 100%!important;
+}
 figure {
   margin: 0;
   padding: 0;
