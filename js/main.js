@@ -48,6 +48,7 @@ document.querySelector('.toggle-menu').addEventListener('click', function() {
 });
 
 function initCountBox() {
+    var COUNTBOX = "#result";
     var HALF_SCREEN_OFFSET = 600;
     var showed                            = true;
 
