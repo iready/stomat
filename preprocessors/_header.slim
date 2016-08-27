@@ -43,7 +43,14 @@ html.no-js
                     | (343)
                   span 311-22-33
               #inline-popups.white-popup.mfp-hide
-                | Записаться на прием
+                .row.center-xs
+                  .col-xs-12
+                    p.modal__data__text Для того, чтобы записаться на прием, выберите дату
+                  .col-xs-12
+                    input.datetimepicker type="text"
+                  .col-xs-12
+                    button.modal__data__button type="sumbit"  Отправить
+
               .col-xs-12
                 a.callme.open-popup-link href="#inline-popups"  Записаться на прием
           .col-xs-12.col-md-7

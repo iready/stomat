@@ -2088,3 +2088,22 @@ text-decoration: none;
     }
   }
 }
+.modal__data {
+  &__text {
+  margin-bottom: 30px;
+}
+&__button {
+      padding: 8px 35px;
+    background-color: #00c691;
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      background-color: lighten(#00c691,3%);
+    }
+}
+}
