@@ -1,93 +1,38 @@
-doctype html
-/! [if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
-/! [if IE 7] <html class="no-js lt-ie9 lt-ie8"
-/! [if IE 8] <html class="no-js lt-ie9"
-/! [if gt IE 8]><!
-html.no-js
-  /! <![endif]
-  head
-    meta charset="utf-8" /
-    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /
-
-    title Стомотология
-    meta content="" name="description" /
-    meta content="" name="keywords" /
-
-    meta content="on" http-equiv="cleartype" /
-    meta content="320" name="MobileOptimized" /
-    meta content="True" name="HandheldFriendly" /
-    meta content="yes" name="apple-mobile-web-app-capable" /
-    meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" /
-
-    link href="css/main.css" rel="stylesheet" /
-    link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css" /
-
-  body
-    
-    #panel
-      a.toggle-menu
-        span.icon-menu
-    header.header
-      .container
-        .row.middle-xs.center-xs
-          .col-xs-12.col-sm-6.col-md-2
-            figure.header__logo
-              a href="#"
-                img.header__logo__image src="img/logo.png" /
-          .col-xs-12.col-sm-6.col-md-3.last-md
-            .row.middle-xs
-              .col-xs-12
-                address.header__top-menu__address
-                  span.icon-phone.footer__working__phone__ico.header__top-menu__address__ico
-                  span.header__top-menu__address__span 
-                    | (343)
-                  span 311-22-33
-              #inline-popups.white-popup.mfp-hide
-                .row.center-xs
-                  .col-xs-12
-                    p.modal__data__text Для того, чтобы записаться на прием, выберите дату
-                  .col-xs-12
-                    input.datetimepicker type="text"
-                  .col-xs-12
-                    button.modal__data__button type="sumbit"  Отправить
-
-              .col-xs-12
-                a.callme.open-popup-link href="#inline-popups"  Записаться на прием
-          .col-xs-12.col-md-7
-            .row.middle-xs.center-xs
-              #menu
-                #a href="https://github.com/mango/slideout" target="_blank" 
-                  header.menu-header
-                    span.menu-header-title Меню
-                section.menu-section
-                  ul.header__top-menu
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link.active href="index.html"  Главная
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link href="#"  О компании
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link href="service.html"  Услуги
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link href="blog.html"  Статьи
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link href="price.html"  Цены
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link href="#"  Отзывы
-                    li.header__top-menu__item
-                      a.header__top-menu__item__link href="contacts.html"  Контакты
-
-              ul.header__top-menu
-                li.header__top-menu__item
-                  a.header__top-menu__item__link.active href="index.html"  Главная
-                li.header__top-menu__item
-                  a.header__top-menu__item__link href="#"  О компании
-                li.header__top-menu__item
-                  a.header__top-menu__item__link href="service.html"  Услуги
-                li.header__top-menu__item
-                  a.header__top-menu__item__link href="blog.html"  Статьи
-                li.header__top-menu__item
-                  a.header__top-menu__item__link href="price.html"  Цены
-                li.header__top-menu__item
-                  a.header__top-menu__item__link href="#"  Отзывы
-                li.header__top-menu__item
-                  a.header__top-menu__item__link href="contacts.html"  Контакты
+a.toggle-menu
+  span.icon-menu
+header.header
+  .container
+    .row.middle-xs.center-xs
+      .col-xs-12.col-sm-6.col-md-2
+        figure.header__logo
+          a href="#"
+            img.header__logo__image src="img/logo.png" /
+      .col-xs-12.col-sm-6.col-md-3.last-md
+        .row.middle-xs
+          .col-xs-12
+            a.callme.open-popup-link href="#inline-popups"  Записаться на прием
+          .col-xs-12
+            address.header__top-menu__address
+              span.icon-phone.footer__working__phone__ico.header__top-menu__address__ico
+              span.header__top-menu__address__span
+                | (343)
+              span 311-22-33
+          #inline-popups.white-popup.mfp-hide
+            | Записаться на прием
+      .col-xs-12.col-md-7
+        #main-menu
+          ul.header__top-menu
+            li.header__top-menu__item
+              a.header__top-menu__item__link.active href="index.html"  Главная
+            li.header__top-menu__item
+              a.header__top-menu__item__link href="#"  О компании
+            li.header__top-menu__item
+              a.header__top-menu__item__link href="service.html"  Услуги
+            li.header__top-menu__item
+              a.header__top-menu__item__link href="blog.html"  Статьи
+            li.header__top-menu__item
+              a.header__top-menu__item__link href="price.html"  Цены
+            li.header__top-menu__item
+              a.header__top-menu__item__link href="#"  Отзывы
+            li.header__top-menu__item
+              a.header__top-menu__item__link href="contacts.html"  Контакты

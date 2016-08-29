@@ -22,7 +22,9 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
 }
-
+.period_picker_box {
+  max-width: 100%!important;
+}
 figure {
   margin: 0;
   padding: 0;
@@ -47,6 +49,7 @@ h2 {
 .header__top-menu {
   font-weight: normal;
   cursor: default;
+  display: none;
 }
 
 .header__top-menu__item {
@@ -1157,7 +1160,6 @@ padding: 10px 0;
 
 .slideout-panel {
   position:relative;
-  z-index: 1;
   will-change: transform;
 }
 
@@ -1433,6 +1435,18 @@ ul.dott {
   margin: 20px 0;
   font-size: 16px;
 }
+ul.dott li:before, .content-text ul li:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #0f8be1;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  float: left;
+  margin: 9px -100% 0 -20px;
+}
 .price-sect h3 {
   margin-bottom: 30px;
 }
@@ -1459,7 +1473,6 @@ ul.dott {
   font-size: 1.5rem;
   line-height: 20px;
   line-height: 2rem;
-      margin-top: 15px;
 }
 .price ul li {
   padding-left: 50px;
@@ -1471,13 +1484,16 @@ ul.dott {
   margin-top: 0;
 }
 .price ul li:before {
-content: '';
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background: #00c691;
-    margin-right: 15px;
-    margin-bottom: 2px;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #00c691;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  top: 48%;
+  top: calc(50% - 3px);
 }
 .price__body {
   margin-bottom: 30px;
@@ -1943,7 +1959,8 @@ text-decoration: none;
 
 .slideout-panel {
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .slideout-open,
@@ -1954,12 +1971,6 @@ text-decoration: none;
 
 .slideout-open .slideout-menu {
   display: block;
-}
-
-.slideout-panel {
-  position: fixed;
-  top: 10px;
-  left: 10px;
 }
 .slideout-menu {
   background: #fff;
@@ -1975,10 +1986,11 @@ text-decoration: none;
   background: rgba(255, 255, 255, 0.7);
   padding: 2px 2px 0px 2px;
   border-radius: 6px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 11;
 }
-  .slideout-panel {
-    display: none;
-  }
 .slideout-menu .header__top-menu {
   display: block;
 }
@@ -1987,7 +1999,7 @@ text-decoration: none;
   text-align: left;
 }
 .slideout-open .slideout-menu {
-  z-index: 111;
+  z-index: 8;
   padding: 0 20px;
 }
 
@@ -1995,18 +2007,12 @@ text-decoration: none;
   .consult__text {
     font-size: 28px;
   }
-.blog__button {
+  .blog__button {
     display: block;
     text-align: center;
-}
-.blog__img {
-  margin: 0;
-}
-.slideout-panel {
-  display: block;
-}
-  .header__top-menu {
-    display: none;
+  }
+  .blog__img {
+    margin: 0;
   }
   .article-head {
     font-size: 30px;
@@ -2015,7 +2021,6 @@ text-decoration: none;
   .header__top-menu__phone-link {
     display: inline-block;
   }
-
   .footer {
     text-align: center;
   }
@@ -2038,58 +2043,48 @@ text-decoration: none;
   }
 }
 
-@media screen and (min-width:990px) and (max-width:1200px) {
+@media screen and (min-width:48em) {
+  .header__top-menu {
+    display: block;
+  }
+  .toggle-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width:62em) {
   .header__top-menu__address {
     font-size: 22px;
   }
   .callme {
     font-size: 15px;
   }
-    .header__top-menu__item__link {
-    font-size: 15px;
+  .header__top-menu__item__link {
+    font-size: 16px;
     letter-spacing: -0.5px;
   }
-}
-.breadcrumb {
+  .breadcrumb {
     list-style: none;
     margin: 0;
     padding: 20px 0;
-  &__item {
-    display: inline-block;
-    color: #000;
-        padding: 0 3px;
-    &:before {
-      content: "/";
+    &__item {
       display: inline-block;
-      color: #00a87b;
-      margin-right: 2px;
-    }
-    &:first-child:before {
-      content: none;
+      color: #000;
+          padding: 0 3px;
+      &:before {
+        content: "/";
+        display: inline-block;
+        color: #00a87b;
+        margin-right: 2px;
       }
-    &__link {
-      color: #00a87b;
-      text-decoration: none;
-      border-bottom: 1px dotted #00a87b;
+      &:first-child:before {
+        content: none;
+        }
+      &__link {
+        color: #00a87b;
+        text-decoration: none;
+        border-bottom: 1px dotted #00a87b;
+      }
     }
   }
-}
-.modal__data {
-  &__text {
-  margin-bottom: 30px;
-}
-&__button {
-      padding: 8px 35px;
-    background-color: #00c691;
-    border-radius: 3px;
-    border: 0;
-    display: inline-block;
-    margin-top: 7px;
-    margin-bottom: 50px;
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-      background-color: lighten(#00c691,3%);
-    }
-}
 }

@@ -12,11 +12,19 @@ $(document).ready(function() {
 
   if ($(COUNTBOX).length > 0) initCountBox();
 
+  var mainList = document.getElementById('main-menu');
+  var copy = mainList.cloneNode(true);
+  var mobileMenu = document.getElementById('menu');
+  mobileMenu.appendChild(copy);
+
   var slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
     'padding': 256,
-    'tolerance': 70
+    'tolerance': 70,
+    'fx': 'ease',
+    'touch': true,
+    'duration': 300
   });
 
 document.querySelector('.toggle-menu').addEventListener('click', function() {
