@@ -1,82 +1,80 @@
-== Slim::Template.new("_header.slim").render
-/ section.consult
-/   .container
-/     .row.middle-xs.center-xs
-/       .col-xs-11
-/         h1.consult__text Установи виниры прямо сейчас
-/     .row.middle-xs.center-xs
-/       .col-xs-9.col-md-4
-/         a.button.consult__button.wow.pulse data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="3" href="#" Консультация
-.container
-  .row.middle-xs.center-xs
-    .col-xs-12.col-md-12
-      h1.article-head.wow.fadeInDown Цены на услуги
-
-.container
-    .row.middle-xs
-      .col-xs-12
-        ul.breadcrumb
-          li.breadcrumb__item
-            a.breadcrumb__item__link href="#" Главная
-          li.breadcrumb__item Цены на услуги
-
-    .row.middle-xs
-      .col-xs-12
-          .price-item
-            .price-item__title
-              .row.middle-xs
-                .col-xs-12.col-sm-6.col-md-6
-                  h3 Консультация и диагностика
-                .col-xs-12.col-sm-6.col-md-6.end-xs
-                  .price__cost
-                          | от 2 000
-                          span.rub ₽
-                .price
-                  p Первичный осмотр и консультация
-                  ul.dott
-                    li Осмотр полости рта с подробной консультацией и постановкой диагноза
-                    li Рентгенологические панорамный и прицельные снимки
-                    li Консультация узких специалистов (терапевта, ортопеда, хирурга, пародонтолога)
-                    li Составление плана лечения
-                    li Составление сметы лечения
-                .another-price
-                  ul.dots
-                    li
-                      .dots__title
-                        span Консультация (повторная)
-                      .dots__value
-                        | бесплатно
-                    li
-                      .dots__title
-                        span Компьютерное моделирование улыбки Dental Smile Design
-                      .dots__value
-                        | бесплатно
-                    li
-                      .dots__title
-                        span 3D-моделирование
-                      .dots__value
-                        | 10 000
-                        span.rub ₽
-                    li
-                      .dots__title
-                        span Компьютерная томография (1 челюсть)
-                      .dots__value
-                        | 4 000
-                        span.rub ₽
-                    li
-                      .dots__title
-                        span Томография нижнечелюстного сустава
-                      .dots__value
-                        | 8 000
-                        span.rub ₽
-                .features
-                  .row.middle-xs.end-md
-                    .col-xs-6.col-md-3
-                      a href="/patsientam/lechenie-po-dms/"  Лечим зубы по ДМС
-                    .col-xs-6.col-md-3
-                      a href="/patsientam/lechenie-v-kredit/"  Оказываем услуги в кредит
-
-
-
+doctype html
+/! [if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
+/! [if IE 7] <html class="no-js lt-ie9 lt-ie8"
+/! [if IE 8] <html class="no-js lt-ie9"
+/! [if gt IE 8]><!
+html.no-js
+  /! <![endif]
+  == Slim::Template.new("_head.slim").render
+  body
+    #menu
+    #panel
+      == Slim::Template.new("_header.slim").render
+      .container
+        .row.middle-xs.center-xs
+          .col-xs-12.col-md-12
+            h1.article-head.wow.fadeInDown Цены на услуги
+      .container
+          .row.middle-xs
+            .col-xs-12
+              ul.breadcrumb
+                li.breadcrumb__item
+                  a.breadcrumb__item__link href="#" Главная
+                li.breadcrumb__item Цены на услуги
+          .row.middle-xs
+            .col-xs-12
+                .price-item
+                  .price-item__title
+                    .row.middle-xs
+                      .col-xs-12.col-sm-6.col-md-6
+                        h3 Консультация и диагностика
+                      .col-xs-12.col-sm-6.col-md-6.end-xs
+                        .price__cost
+                                | от 2 000
+                                span.rub ₽
+                      .price
+                        p Первичный осмотр и консультация
+                        ul.dott
+                          li Осмотр полости рта с подробной консультацией и постановкой диагноза
+                          li Рентгенологические панорамный и прицельные снимки
+                          li Консультация узких специалистов (терапевта, ортопеда, хирурга, пародонтолога)
+                          li Составление плана лечения
+                          li Составление сметы лечения
+                      .another-price
+                        ul.dots
+                          li
+                            .dots__title
+                              span Консультация (повторная)
+                            .dots__value
+                              | бесплатно
+                          li
+                            .dots__title
+                              span Компьютерное моделирование улыбки Dental Smile Design
+                            .dots__value
+                              | бесплатно
+                          li
+                            .dots__title
+                              span 3D-моделирование
+                            .dots__value
+                              | 10 000
+                              span.rub ₽
+                          li
+                            .dots__title
+                              span Компьютерная томография (1 челюсть)
+                            .dots__value
+                              | 4 000
+                              span.rub ₽
+                          li
+                            .dots__title
+                              span Томография нижнечелюстного сустава
+                            .dots__value
+                              | 8 000
+                              span.rub ₽
+                      .features
+                        .row.middle-xs.end-md
+                          .col-xs-6.col-md-3
+                            a href="/patsientam/lechenie-po-dms/"  Лечим зубы по ДМС
+                          .col-xs-6.col-md-3
+                            a href="/patsientam/lechenie-v-kredit/"  Оказываем услуги в кредит
 == Slim::Template.new("_feedback.slim").render
 == Slim::Template.new("_footer.slim").render

@@ -1,47 +1,54 @@
-== Slim::Template.new("_header.slim").render
-section.blog
-	.container
-		.row.middle-xs.center-xs
-			.col-xs-9.col-md-8
-				h2.article-head.wow.fadeInDown Статьи
-		.row
-			.col-md-4.col-xs-12
-				figure.blog__img
-						img src="images/review/3.jpg"
-			.col-md-8.col-xs-12.end-xs
-					h3.blog__title Название статьи
-					p.blog__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					a.blog__button href="blog_more.html" Читать полностью...
-		.row
-			.col-md-4.col-xs-12
-				figure.blog__img
-						img src="images/review/3.jpg"
-			.col-md-8.col-xs-12.end-xs
-					h3.blog__title Название статьи
-					p.blog__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					a.blog__button href="blog_more.html" Читать полностью...
-		.row
-			.col-md-4.col-xs-12
-				figure.blog__img
-						img src="images/review/3.jpg"
-			.col-md-8.col-xs-12.end-xs
-					h3.blog__title Название статьи
-					p.blog__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					a.blog__button href="blog_more.html" Читать полностью...
-
-		.row
-			.col-xs-12
-				.pagination
-					.wp-pagenavi
-					  span.pages Страница 1 из 5
-					  span.current 1
-					  a.page.larger href="#"  2
-					  a.page.larger href="#"  3
-					  a.page.larger href="#"  4
-					  a.page.larger href="#"  5
-					  a.nextpostslink href="#" rel="next"  »
-
-				
-			    
+doctype html
+/! [if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
+/! [if IE 7] <html class="no-js lt-ie9 lt-ie8"
+/! [if IE 8] <html class="no-js lt-ie9"
+/! [if gt IE 8]><!
+html.no-js
+  /! <![endif]
+  == Slim::Template.new("_head.slim").render
+  body
+    #menu
+    #panel
+      == Slim::Template.new("_header.slim").render
+      section.blog
+        .container
+          .row.middle-xs.center-xs
+            .col-xs-9.col-md-8
+              h2.article-head.wow.fadeInDown Статьи
+          .row
+            .col-md-4.col-xs-12
+              figure.blog__img
+                  img src="images/review/3.jpg"
+            .col-md-8.col-xs-12.end-xs
+                h3.blog__title Название статьи
+                p.blog__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                a.blog__button href="blog_more.html" Читать полностью...
+          .row
+            .col-md-4.col-xs-12
+              figure.blog__img
+                  img src="images/review/3.jpg"
+            .col-md-8.col-xs-12.end-xs
+                h3.blog__title Название статьи
+                p.blog__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                a.blog__button href="blog_more.html" Читать полностью...
+          .row
+            .col-md-4.col-xs-12
+              figure.blog__img
+                  img src="images/review/3.jpg"
+            .col-md-8.col-xs-12.end-xs
+                h3.blog__title Название статьи
+                p.blog__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                a.blog__button href="blog_more.html" Читать полностью...
+          .row
+            .col-xs-12
+              .pagination
+                .wp-pagenavi
+                  span.pages Страница 1 из 5
+                  span.current 1
+                  a.page.larger href="#"  2
+                  a.page.larger href="#"  3
+                  a.page.larger href="#"  4
+                  a.page.larger href="#"  5
+                  a.nextpostslink href="#" rel="next"  »
 == Slim::Template.new("_feedback.slim").render
 == Slim::Template.new("_footer.slim").render

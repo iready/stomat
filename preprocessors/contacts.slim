@@ -1,29 +1,38 @@
-== Slim::Template.new("_header.slim").render
-section.contacts
-	.container
-		.row.middle-xs.center-xs
-			.col-xs-9.col-md-8
-				h2.article-head.wow.fadeInDown Контакты
-
-	#main_map
-	.container
-		.row.middle-xs.center-xs
-			.col-xs-12.col-md-10
-				section.product_cart__tab_content__item.active itemscope="" itemtype="http://schema.org/Organization"
-					li.product_cart__tab_content__item__characteristics__item
-					  strong Данные о стоматологии
-					li.product_cart__tab_content__item__characteristics__item
-					  | Юридическое название:
-					  span ООО "Приоритет"
-					li.product_cart__tab_content__item__characteristics__item
-					  | ОГРН:
-					  span 1126658022050
-					li.product_cart__tab_content__item__characteristics__item
-					  | ИНН:
-					  span 6658413167
-					li.product_cart__tab_content__item__characteristics__item
-					  | Юридический адрес:
-					  span г.Екатеринбург пер.Встречный д.7/3
-
+doctype html
+/! [if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
+/! [if IE 7] <html class="no-js lt-ie9 lt-ie8"
+/! [if IE 8] <html class="no-js lt-ie9"
+/! [if gt IE 8]><!
+html.no-js
+  /! <![endif]
+  == Slim::Template.new("_head.slim").render
+  body
+    #menu
+    #panel
+      == Slim::Template.new("_header.slim").render
+      section.contacts
+        .container
+          .row.middle-xs.center-xs
+            .col-xs-9.col-md-8
+              h2.article-head.wow.fadeInDown Контакты
+        #main_map
+        .container
+          .row.middle-xs.center-xs
+            .col-xs-12.col-md-10
+              section.product_cart__tab_content__item.active itemscope="" itemtype="http://schema.org/Organization"
+                li.product_cart__tab_content__item__characteristics__item
+                  strong Данные о стоматологии
+                li.product_cart__tab_content__item__characteristics__item
+                  | Юридическое название:
+                  span ООО "Приоритет"
+                li.product_cart__tab_content__item__characteristics__item
+                  | ОГРН:
+                  span 1126658022050
+                li.product_cart__tab_content__item__characteristics__item
+                  | ИНН:
+                  span 6658413167
+                li.product_cart__tab_content__item__characteristics__item
+                  | Юридический адрес:
+                  span г.Екатеринбург пер.Встречный д.7/3
 == Slim::Template.new("_feedback.slim").render
 == Slim::Template.new("_footer_without_map.slim").render
