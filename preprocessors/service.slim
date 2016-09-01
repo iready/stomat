@@ -1,18 +1,21 @@
-== Slim::Template.new("_header.slim").render
-/ section.consult
-  / .container
-  /   .row.middle-xs.center-xs
-  /     .col-xs-9.col-md-8
-  /       h2.consult__text Установка виниров
-  /   .row.middle-xs.center-xs
-  /     .col-xs-9.col-md-4
-  /       a.button.consult__button.wow.pulse data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="3" href="#" Консультация
-.container
-  .row.middle-xs.center-xs
-    .col-xs-12.col-md-12
-      h1.article-head.wow.fadeInDown Наши услуги
-    .col-xs-12
-      article.service
-        == Slim::Template.new("_services.slim").render
+doctype html
+/! [if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
+/! [if IE 7] <html class="no-js lt-ie9 lt-ie8"
+/! [if IE 8] <html class="no-js lt-ie9"
+/! [if gt IE 8]><!
+html.no-js
+  /! <![endif]
+  == Slim::Template.new("_head.slim").render
+  body
+    #menu
+    #panel
+      == Slim::Template.new("_header.slim").render
+      .container
+        .row.middle-xs.center-xs
+          .col-xs-12.col-md-12
+            h1.article-head.wow.fadeInDown Наши услуги
+          .col-xs-12
+            article.service
+              == Slim::Template.new("_services.slim").render
 == Slim::Template.new("_feedback.slim").render
 == Slim::Template.new("_footer.slim").render
